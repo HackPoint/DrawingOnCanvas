@@ -1,0 +1,3 @@
+﻿define([
+    './drawing-directive'
+], function () { });
