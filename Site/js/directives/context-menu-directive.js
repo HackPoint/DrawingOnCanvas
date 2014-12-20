@@ -10,20 +10,21 @@
                     {
                         name: 'Draw Line',
                         title: 'Draw Line',
-                        fun: function() {
-                            alert('i am add button')
+                        fun: function () {
+                            scope.$emit('drawline', this);
+                            // alert('i am add button')
                         }
                     }, {
                         name: 'Drag&Drop',
                         title: 'Drag&Drop',
                         fun: function() {
-                            alert('i am update button')
+                            scope.$emit('drag', this);
                         }
                     }, {
                         name: 'Delete',
                         title: 'create button',
                         fun: function() {
-                            alert('i am add button')
+                            scope.$emit('delete', this);
                         }
                     }
                 ];

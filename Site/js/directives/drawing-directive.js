@@ -8,6 +8,21 @@
                 var id = "#" + attrs.id;
                 scope.paper = Raphael(attrs.id, '100%', '100%');
                 scope.points = [];
+
+                scope.$on('drawline', function(e) {
+                    alert('line');
+                    $log.info(e);
+                });
+
+                scope.$on('drag', function (e) {
+                    alert('drag');
+                    $log.info(e);
+                });
+
+                scope.$on('delete', function (e) {
+                    alert('delete');
+                    $log.info(e);
+                });
 /*
 
                 $(id).on('click', function (e) {
