@@ -88,9 +88,11 @@
     <Content Include="js\controllers-module.js" />
     <Content Include="js\controllers\main-controller.js" />
     <Content Include="js\controllers\index.js" />
+    <Content Include="js\directives\context-menu-directive.js" />
     <Content Include="js\directives\drawing-directive.js" />
     <Content Include="js\directives\index.js" />
     <Content Include="js\main.js" />
+    <Content Include="js\models\draggable.js" />
     <Content Include="js\models\line.js" />
     <Content Include="js\routes.js" />
     <Content Include="js\models\polygon.js" />
@@ -2304,6 +2306,9 @@
     <Content Include="js\vendors\angularjs\i18n\angular-locale_zu.js" />
     <Content Include="js\vendors\angularjs\ui-router\angular-ui-router.js" />
     <Content Include="js\vendors\angularjs\ui-router\angular-ui-router.min.js" />
+    <Content Include="js\vendors\context-menu\contextMenu.css" />
+    <Content Include="js\vendors\context-menu\contextMenu.js" />
+    <Content Include="js\vendors\context-menu\contextMenu.min.js" />
     <Content Include="js\vendors\jquery\jquery-2.1.1.min.js" />
     <Content Include="js\vendors\jquery\jquery.js" />
     <Content Include="js\vendors\materialize\hammerjs.js" />
@@ -2559,6 +2564,8 @@
     <Content Include="js\vendors\angularjs\errors.json" />
     <Content Include="js\vendors\angularjs\version.json" />
     <Content Include="js\vendors\jquery\jquery-2.1.1.min.map" />
+    <Content Include="js\vendors\context-menu\bower.json" />
+    <Content Include="js\vendors\context-menu\contextMenu.js.jquery.json" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

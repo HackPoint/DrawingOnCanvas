@@ -14,8 +14,8 @@
         'raphaelsketchpad': './vendors/raphael/raphael.sketchpad',
         'jquery': ['//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min', 'vendors/jquery/jquery'],
         'JSON2': ['//cdnjs.cloudflare.com/ajax/libs/json2/20140204/json2.min'],
-        'eve': './vendors/raphael/eve'
-        // 'ngProgressLite': '../vendors/ngprogress-lite/ngprogress-lite'
+        'eve': './vendors/raphael/eve',
+        'menu':['./vendors/context-menu/contextMenu']
     },
 
     // angular doesn't support AMD out of the box so create a temp variable in global namespace...
@@ -52,12 +52,13 @@
             deps: ['raphael', 'jquery', 'JSON2', 'eve']
         },
 
-        /* ngProgress: {
-             deps: ['angular'],
-             exports: 'angular'
-         },*/
         angular: {
             exports: 'angular'
+        },
+
+        menu: {
+            exports: 'menu',
+            deps: ['jquery']
         }
     },
     dev: {
@@ -71,6 +72,7 @@
         }
     },
     baseUrl: 'js',
+
     // startup the application
     deps: ['bootstrap']
 });
