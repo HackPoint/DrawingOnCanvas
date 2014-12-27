@@ -74,5 +74,5 @@
     baseUrl: 'js',
 
     // startup the application
-    deps: ['bootstrap']
+    deps: ['bootstrap-app']
 });

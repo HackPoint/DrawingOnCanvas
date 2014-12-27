@@ -1,11 +1,16 @@
 ﻿<div class="row">
-    <div class="video-container">
-        <video autoplay loop width="1000px" height="1000px">
-            <source src="http://getcool.co.il/overlay/loop.mp4" type="video/mp4">
-            <source src="http://getcool.co.il/overlay/loop.webm" type="video/webm">
-            <source src="http://getcool.co.il/overlay/loop.ogv" type="video/ogg">
-        </video>
-        
-        <div id="viewer" class="video-canvas" drawing context-menu></div>
+    <ul id="shape" class="contextMenu">
+        <li><a type="radio" name="size" w="64" href="#size_64" color="#ccc">Gray</a></li>
+        <li><a type="radio" name="size" w="100" href="#size_100" color="red">Red</a></li>
+        <li><a type="radio" name="size" w="130" href="#size_130" color="green">Green</a></li>
+        <li class="separator">
+            <a type="radio" name="style" val="default" href="#style_default">Use Default Style</a>
+        </li>
+        <li><a type="radio" name="style" val="default" href="#style_custom">Use Custom Style</a></li>
+    </ul>
+
+    <div class="video-container" >
+        <div style="display: block; height: 1000px; width: 1000px; background: #000; margin: 0 auto;"></div>
+        <div id="viewer" class="video-canvas" drawing> </div>
     </div>
 </div>

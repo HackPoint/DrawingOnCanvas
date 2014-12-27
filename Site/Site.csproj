@@ -82,7 +82,7 @@
     <Content Include="Global.asax" />
     <Content Include="index.html" />
     <Content Include="js\app.js" />
-    <Content Include="js\bootstrap.js" />
+    <Content Include="js\bootstrap-app.js" />
     <Content Include="js\controllers\drawing-controller.js" />
     <Content Include="js\directives-module.js" />
     <Content Include="js\controllers-module.js" />
@@ -92,7 +92,7 @@
     <Content Include="js\directives\drawing-directive.js" />
     <Content Include="js\directives\index.js" />
     <Content Include="js\main.js" />
-    <Content Include="js\models\draggable.js" />
+    <Content Include="js\models\extensions.js" />
     <Content Include="js\models\line.js" />
     <Content Include="js\routes.js" />
     <Content Include="js\models\polygon.js" />
@@ -2330,6 +2330,7 @@
     <Content Include="js\vendors\underscore\underscore-min.js" />
     <Content Include="js\vendors\underscore\undescore.js" />
     <Content Include="views\dashboard.html" />
+    <Content Include="views\shape-menus.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

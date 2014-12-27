@@ -5,8 +5,7 @@
      './directives/index',
      './models/line',
      './models/polygon',
-     './models/draggable',
-     'menu'
+     './models/extensions'
 ], function (ng) {
     'use strict';
     return ng.module('app', ['app.controllers', 'app.directives', 'ui.router']);

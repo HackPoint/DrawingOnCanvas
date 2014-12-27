@@ -1,6 +1,4 @@
 ﻿@charset "UTF-8";
-@import url('../css/materialize.min.css'); 
-
 
 [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak, .ng-hide {
     display: none !important;
@@ -22,3 +20,56 @@ ng\:form {
 
 .video-container { position: relative; }
 .video-canvas { position: absolute;top: 0;bottom: 0;left: 0;right: 0;width: 100%;height: 100%; z-index: 999}
+.contextMenu {
+    position: absolute;
+    width: 150px;
+    z-index: 99999;
+    border: solid 1px #CCC;
+    background: #EEE;
+    padding: 0px;
+    margin: 0px;
+    display: none;
+}
+
+.contextMenu LI {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.contextMenu A {
+    color: #333;
+    text-decoration: none;
+    display: block;
+    line-height: 20px;
+    height: 20px;
+    background-position: 6px center;
+    background-repeat: no-repeat;
+    outline: none;
+    padding: 1px 5px;
+    padding-left: 28px;
+}
+
+.contextMenu LI.hover A {
+    color: #FFF;
+    background-color: #3399FF;
+}
+
+.contextMenu LI.disabled A {
+    color: #AAA;
+    cursor: default;
+}
+
+.contextMenu LI.hover.disabled A {
+    background-color: transparent;
+}
+
+.contextMenu LI.separator {
+    border-top: solid 1px #CCC;
+}
+
+/***********************************************************************
+Context Menu Icons
+***********************************************************************/
+
+.contextMenu LI.checked A { background-image: url(http://dl.dropbox.com/u/20165443/jsFiddle/images/ICON_OK.png); }

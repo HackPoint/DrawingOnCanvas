@@ -1,4 +1,4 @@
 ﻿define([
-    './drawing-directive',
-    './context-menu-directive'
+    './drawing-directive'
+    
 ], function () { });
