@@ -1,16 +1,40 @@
-﻿<div class="row">
-    <ul id="shape" class="contextMenu">
-        <li><a type="radio" name="size" w="64" href="#size_64" color="#ccc">Gray</a></li>
-        <li><a type="radio" name="size" w="100" href="#size_100" color="red">Red</a></li>
-        <li><a type="radio" name="size" w="130" href="#size_130" color="green">Green</a></li>
-        <li class="separator">
-            <a type="radio" name="style" val="default" href="#style_default">Use Default Style</a>
-        </li>
-        <li><a type="radio" name="style" val="default" href="#style_custom">Use Custom Style</a></li>
-    </ul>
+﻿
+ <!-- /.panel-heading -->
+<div class="panel-body">
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="panel panel-info">
+                <div class="panel-heading">Left</div>
+                <div class="panel-body">
+                    <img src="http://3pidesign.com/3DVMD_Setup/images/day_view.jpg" width="480" height="640" class="center-block"/>
+                </div>
+            </div>
 
-    <div class="video-container" >
-        <div style="display: block; height: 1000px; width: 1000px; background: #000; margin: 0 auto;"></div>
-        <div id="viewer" class="video-canvas" drawing> </div>
+            <div id="viewer1" class="video-canvas" drawing> </div>
+        </div>
+        <!-- /.col-lg-6 (nested) -->
+        <div class="col-lg-6">
+            <div class="panel panel-info">
+                <div class="panel-heading">Right</div>
+                <div class="panel-body">
+                    <img src="http://3pidesign.com/3DVMD_Setup/images/day_view.jpg" width="480" height="640" class="center-block"/>
+                </div>
+            </div>
+
+            <div id="viewer2" class="video-canvas" drawing> </div>
+        </div>
+        <!-- /.col-lg-6 (nested) -->
     </div>
+    <!-- /.row -->
 </div>
+<!-- /.panel-body -->
+
+<ul id="shape" class="contextMenu">
+    <li><a type="radio" name="size" w="64" href="#size_64" color="#ccc">Gray</a></li>
+    <li><a type="radio" name="size" w="100" href="#size_100" color="red">Red</a></li>
+    <li><a type="radio" name="size" w="130" href="#size_130" color="green">Green</a></li>
+    <li class="separator">
+        <a type="radio" name="style" val="default" href="#style_default">Use Default Style</a>
+    </li>
+    <li><a type="radio" name="style" val="default" href="#style_custom">Use Custom Style</a></li>
+</ul>

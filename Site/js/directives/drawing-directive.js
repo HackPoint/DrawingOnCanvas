@@ -5,6 +5,7 @@
         return {
             restrict: 'A',
             replace: false,
+            scope: true,
             link: function (scope, element, attrs) {
                 var id = "#" + attrs.id;
                 scope.paper = Raphael(attrs.id, '100%', '100%');
@@ -19,6 +20,7 @@
 
                 scope.canvas.dblclick(function (e) {
                     e.stopPropagation();
+                    e.preventDefault();
                     var polygon = new shapes.polygon(scope.points, scope.paper, scope);
                     scope.polygons.push({ polygon: polygon.build() });
                     scope.points = [];
